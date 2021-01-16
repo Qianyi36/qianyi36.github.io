@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            intro-Ui
+        </title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    </head>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">Computer Science</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Unity</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Programming
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../../programming/basics.html">Basics</a></li>
+                    <li><a class="dropdown-item" href="../../programming/languages.html">Languages</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Web development</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">App development</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Game development</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Ai</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+    <body>
+
+
+
+
+      <div class="container left">
+        <div class="row align-items-start left">
+          <div class="col left">
+                <h2 class="left">Unity</h2>
+
+                <div class="left" id="scroll">
+                  <div class="accordion accordion-flush left" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Introduction
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="list-group">
+                            <a href="intro-ui.html" class="list-group-item list-group-item-action active" aria-current="true">
+                              User interface
+                            </a>
+                            <a href="setup.html" class="list-group-item list-group-item-action">Unity Setup</a>
+                            <a href="intro-gameobjects.html" class="list-group-item list-group-item-action">Gameobjects</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Disabled link, Content TBD</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Content TBD
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">:)</div>
+                      </div>
+                    </div>
+                    
+                  
+                  </div>
+                </div>
+
+          </div>
+          <div class="col-9">
+
+              <!--Introduction-->
+              <h1 >Unity</h1>
+              <p >This page is a basic overview of the Unity User Interface</p>
+
+              <hr/>
+
+              
+              
+              <!--Introduction to the UI-->
+              <h1 >The User Interface</h1>
+              <p >
+                  The Unity user interface has 4 major parts, which are the hierarchy, asset viewer, the game view, and the inspector.
+              </p>
+              <P >
+                  I don't actually know what the "asset viewer" and "game view" are called, as they are not labeled with their names, so I made up a name that makes sense.
+              </P>
+              <img src="images/ui.png" alt="user interface" width="683" height="384" class="center">
+              <h2 >
+                  Hierarchy
+              </h2>
+              <p >
+                  The hierarchy shows all of game objects currently in the game, when starting up the project, a camera will be in the hierarchy(and a directional light, if 3d was selected).
+              </p>
+              <p >
+                  Game objects can be created by dragging sprites, or prefabs into onto the hierarchy, or by center clicking.
+              </p>
+              <h2 >
+                  <h2 >
+                      Game View
+                  </h2>
+              <p >
+                  The game view is where you will edit and view the game, when you create the game, there will be a tab labeled scene, and one labeled game.
+                  Scene view allows you to edit and move game objects, and view the game from different angles, game view shows what the player would see, the view encompassed by the range of the camera(Shown by a white rectangle in scene view).
+              </p>
+
+              <p >
+                  A problem that happens to me occasionally, is the absence of a tab when I enter the game. If this happens to you, center click on the tab that is there, and click "add tab" then add what you need.
+              </p>
+              <img src="images/view problem.png" alt="adding a new tab" width="683" height="384" class="center">
+              <h2 >
+                  Asset viewer 
+              </h2>
+              <p >
+                  The asset viewer is Unity's file explorer, it lets you organize all of your files into folders.
+                  Game objects are stored in the hierarchy, files such as sprites, scripts, and prefabs that are not gameobjects are stored in the asset viewer.
+              </p>
+              <img src="images/asset viewer.png" alt="asset viewer center click" width="683" height="384" class="center">
+              <p >
+                  center clicking in the asset viewr allows you to create a variety of different objects, or import something from your computer.
+              </p>
+              <h2 >
+                  Inspector
+              </h2>
+              <p >
+                  The inspector lets you view the components and details of game objects, clicking on a game object in the hierarchy, or clicking it in scene view, pulls up the game object in the inspector.
+              </p>
+              <img src="images/inspector.png" alt="Inspector" width="683" height="384" class="center">
+              <p >
+                  Clicking on the square game object, visible in the game view, allows me to view and edit its components in the inspector.
+              </p>
+
+                </div>
+                
+              </div>
+      </div>
+            
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
